@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Models\Alumnos;
+use App\Http\Controllers\EjemploClase;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/obtenerAlumnos', [EjemploClase::class, 'dameAlumnos']);
