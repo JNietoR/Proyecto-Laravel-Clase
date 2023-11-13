@@ -17,7 +17,6 @@ return new class extends Migration
             $table->date('fecha_nacimiento');
             $table->boolean('matriculado');
             $table->decimal('nota');
-
             $table->timestamps();
         });
     }
